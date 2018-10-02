@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class RentalDetailComponent implements OnInit {
 
-  currentRental: Rental;
+  rental: Rental;
 
   constructor(private route: ActivatedRoute, private rentalService: RentalService) { }
 
@@ -24,7 +24,7 @@ export class RentalDetailComponent implements OnInit {
   getRental(rentalId: string) {
       this.rentalService.getRentalById(rentalId).subscribe( 
         (rental: Rental) => {
-            this.currentRental = rental;
+            this.rental = rental;
         }
       )
   }

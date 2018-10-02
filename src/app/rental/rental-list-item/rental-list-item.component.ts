@@ -8,7 +8,7 @@ import { Rental } from '../shared/rental.model';
 })
 export class RentalListItemComponent implements OnInit {
 
-  @Input() currentRental: Rental;
+  @Input() rental: Rental;
 
   constructor() { }
 

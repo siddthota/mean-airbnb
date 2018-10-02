@@ -5,7 +5,7 @@ import {Routes, RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './common/header/header.component';
-import { RentalComponent } from './rental/rental.component';
+import { MapsModule } from './common/maps/maps.module';
 
 const routes: Routes = [
   {path: '', redirectTo: '/rentals', pathMatch: 'full'},
@@ -14,12 +14,13 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     RentalModule,
+    MapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
