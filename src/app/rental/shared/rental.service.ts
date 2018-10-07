@@ -78,7 +78,7 @@ public getRentals(): Observable<any> {
   })
 }
 
-public getRentalById(rentalId): Observable<any> {
+public getRentalById(rentalId: any): Observable<any> {
   return new Observable( (observer) => {
     setTimeout( () => {
       const foundRental = this.rentals.find( (rental) => {

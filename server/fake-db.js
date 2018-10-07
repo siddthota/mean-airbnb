@@ -42,7 +42,7 @@ async clearDB() {
     await Rental.deleteMany({});
 }
 
-pushRentalstoDB(rental) {
+pushRentalstoDB() {
     this.rentals.forEach( (rental) => {
         const newRental = new Rental(rental);
 
