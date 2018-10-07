@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
 import { MapsComponent } from './maps.component';
 
+import { MapService } from './maps.service';
+
 
 //Google Maps API Key - https://console.developers.google.com/google/maps-apis/apis/maps-ios-backend.googleapis.com/credentials?project=airbnb-angular&duration=PT1H
 
@@ -20,7 +22,7 @@ import { MapsComponent } from './maps.component';
       })
 
   ],
-  providers: [],
+  providers: [MapService],
   bootstrap: []
 })
 export class MapsModule { }
